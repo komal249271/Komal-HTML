@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        width: 100%;
+        font-family: Arial, sans-serif;
+    }
+    /* yaha se navbar suru hai */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #925d5d;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        text-decoration: white;
+        
+    }
+
+    .logo h5 {
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .logo h1 {
+        color: #f9f9f8;
+        font-size: 30px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li:hover a {
+        color: #e9bae0;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .social-icons img {
+        margin-left: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+  
+    .background-image {
+        background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .background-image h1 {
+        color: white;
+        font-size: 48px;
+        text-shadow: 2px 2px 8px rgba(243, 238, 238, 0.7);
+        text-decoration: white;
+    }
+
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .background-image h1 {
+            font-size: 40px;
+            background-color: white;
+            color: white;
+        }
+    }
+    footer h4{
+        background-color: #4f4f4f;
+        display: flex;
+        align-items: center;
+        padding: 60px;
+        color: white;
+        font-family: cursive;
+        font-size: 3vh;
+        
+    }
+    .lili{
+        display: flex;
+        background-color: #4f4f4f;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    h3{
+        color: white;
+    }
+
+
+</style>
+
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <h5>Contact us - 8750471024 | Email: pamdeygaurav911@gmail.com</h5>
+            <h1>BUYBUZZ</h1>
+                <H3>Super Value Deals<BR>On All Products</H3>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/komal.h/home.html">HOME</a></li>
+            <li><a href="/komal.h/About.html">SHOPS</a></li>
+            <li><a href="CART.HTML">CART</a></li>
+            <li><a href="about2.html">ABOUT</a></li>
+            
+            <li><a href="F.HTML">CONTACT</a></li>
+        </ul>
+
+        <div class="social-icons">
+            <a href="https://www.meesho.com/"><img src="https://tse2.mm.bing.net/th?id=OIP.Fo6kHlwWNY1F_76Txq74PAHaED&pid=Api&P=0&h=180" width="30px" height="25px"></a>
+            <a href="https://www.amazon.in/"><img src="https://tse3.mm.bing.net/th?id=OIP.Wk9CWgZilLnrCJgC8nlllwHaEK&pid=Api&P=0&h=180" width="30px" height="25px">
+                    </a>
+        </div>
+    </nav>
+
+  
+    <div class="background-image">
+        <h1>Welcome to BuyBuzz</h1>
+             <h3>"The best things in life are purchased."</h3>
+            
+        
+    </div>
+     <footer>
+   <h1>About us<img src="" </h1>
+        <h4>
+            Today, one can easily launch their very own online business while sitting comfortably at their home, without investing a lot of money. Online shopping has developed significantly over the previous decade, and eCommerce companies now generate billions of dollars in monthly sales all across the globe.<br>
+
+            People are depending on online purchasing platforms more than ever since the outbreak of the pandemic, and many are also using this opportunity to develop their online empires. The online reselling industry is no different in that aspect.<br>
+            
+             <br>
+        </h4>
+    </div>
+    </footer>
+
+</body>
+
+</html>
